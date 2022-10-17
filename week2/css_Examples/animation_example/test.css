@@ -1,0 +1,9 @@
+@keyframes myfirst{
+   from {background: red;}
+   to {background: yellow;} 
+}
+div{
+	animation: myfirst 8s infinite alternate;
+	padding: 10%;
+}
+

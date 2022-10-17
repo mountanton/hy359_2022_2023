@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The setInterval() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+var test=setInterval(display, 1000);
+
+function display(){
+let text = "Do you like Tsitsipas?";
+  if (confirm(text) == true) {
+    clearInterval(test)
+  } else {
+    //nothing
+  }
+  //document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+

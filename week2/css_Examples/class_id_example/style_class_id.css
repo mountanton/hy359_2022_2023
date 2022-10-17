@@ -1,0 +1,13 @@
+.mycontent{
+	background-color: white;
+	color: magenta;
+	padding: 2%;
+}
+.mycontent:hover{
+	background-color: black;
+}
+
+#example:hover{
+	background-color: yellow;
+	cursor: pointer;
+}

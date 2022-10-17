@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+function myFunction() {
+  var x = document.getElementsByTagName("p");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "yellow";
+  }
+}
+</script>
+  </head>
+  <body>
+<p>This is a p element</p>
+<p>This is also a p element.</p>
+<p>This is also a p element - Click the button to change the background color of all p elements in this document.
+</p>
+<p>This is not a p element</p> <br>
+<button onClick="myFunction()">Try it</button></body>
+</html>

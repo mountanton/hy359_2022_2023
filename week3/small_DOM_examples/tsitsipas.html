@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+function verifyLogin(){
+var myForm = document.login;
+if (myForm.username.value ==
+"stefanos" &&
+myForm.password.value == "tsitsipas")
+window.open("Monday/index.html");
+else
+	alert("De paizeis me poiotita");
+}
+</script>
+</head>
+<body>
+<form name="login">
+Username: <input name="username"><BR>
+Password: <input name="password" TYPE=PASSWORD><BR>
+<input type=button value="Secret Login" onClick="verifyLogin()">
+<input type=reset>
+</form>
+</body>
+</html>

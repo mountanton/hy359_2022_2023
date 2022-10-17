@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+A div element with class="example"
+</div>
+<div class="example">
+Another div element with class="example"
+</div>
+<p class="example">A p element with class="example"</p>
+<p>Click the button to find out how many elements with class "example" there are in this document.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("example");
+  document.getElementById("demo").innerHTML = x.length;
+}
+</script>
+</body>
+</html>

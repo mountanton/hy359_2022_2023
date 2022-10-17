@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+var times=0;
+function myFunction() {
+ var x = document.getElementById("demo");
+  x.style.color = "yellow";
+  if(times==2)
+   x.style.color = "red";
+  document.getElementById("message").innerHTML+="<br> Pushed "+times++;
+}
+</script>
+</head>
+<body>
+<p id="demo"> Click the button to change the color of this paragraph and the div message</p>
+<button onclick="myFunction()">Try it</button>
+<div id="message"></div>
+</body>
+</html>

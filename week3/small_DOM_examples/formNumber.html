@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate() {
+var form = document.forms.myForm;
+var num = form.myNumber.value;
+if (num >= 1 && num <= 5) {
+  document.getElementById("message").innerHTML="Correct! "+num;
+} else {
+  document.getElementById("message").innerHTML='Must be between 1 and 5';
+    return false;
+}
+  return false;
+}
+</script>
+</head>
+<body>
+<form name="myForm" onsubmit="return validate();">
+Enter a value from 1 to 5:
+<input type="text" name="myNumber"><input type="submit" value="Send input">
+</form>
+  <div id="message"></div>
+</body>
+</html>

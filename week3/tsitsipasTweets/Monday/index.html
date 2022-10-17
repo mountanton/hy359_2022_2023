@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head> 
+        <script src="js/functions.js" defer></script>
+        <link rel="stylesheet" href="css/cssExamples.css">
+    </head>
+
+    <body>
+           <h2>Ποιο Tweet του Τσιτσιπά είσαι</h2>
+        <div class="row">
+            <div class="column" style="background-color:#ADD8E6;">     
+                <form id="signup" >
+                    <label for="fname">Give your Birth Date!</label><br><br>
+                    <input type="date" value="1992-06-03" id="birthdate" name="birthdate">
+<br><br>              
+                </form>
+				 <button type="button" class="button" onClick="submit()">Μάθε τι tweet είσαι</button>
+                <br>	
+
+            </div>
+            <div class="column" id="output" style="background-color:#fffff0;">
+             
+                
+                <div id="image" class="subColumn"><img width=100% height=100% src='img/tsitsipasPhilosopher.jpg' alt='Tsitsip'/></div>    
+				<div id="message" class="subColumn"></div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

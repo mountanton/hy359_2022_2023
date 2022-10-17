@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 30%;
+  text-align:center;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 8px;
+  margin-right:10px;
+  margin-left:10px;
+    height:630px;
+}
+
+.column2 {
+  float: left;
+  width: 66%;
+  text-align:left;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 8px;
+  margin-right:10px;
+  margin-left:10px;
+    height:630px;
+}
+
+
+.subColumn {
+float: left;
+  width: 48%;
+  padding: 10px;
+  border: 5px solid black;
+  font-size:20px;
+  border-radius: 8px;
+  margin-right:10px;
+  margin-left:10px;
+  height:500px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form,input{
+ 	
+font-size:50px;
+	
+}
+
+p{
+font-size:33px;
+font-style: italic;	
+}
+
+h2{
+	text-align: center;
+}
+
+.button {
+  background-color: #ffffff; 
+    border: 5px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+

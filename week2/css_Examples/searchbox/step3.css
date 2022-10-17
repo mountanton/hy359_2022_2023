@@ -1,0 +1,80 @@
+body{
+ background-color:#ede4dc;
+}
+#gradient{
+ width:0;
+ height:50px;
+ margin:0 auto;
+ border-radius:100%;
+ -webkit-box-shadow: 0 50px 200px 150px rgba(255, 255, 255, 0.93);
+ -moz-box-shadow: 0 50px 200px 150px rgba(255, 255, 255, 0.93);
+ box-shadow: 0 50px 200px 150px rgba(255, 255, 255, 0.93);
+}
+
+
+/* Step 1 */
+
+.searchbox{
+ background-color:#fffbf8;
+ padding:13px;
+ width:335px;
+ margin:100px auto;
+ box-sizing:border-box;
+ border-radius:6px;
+}
+
+/* End Step 1 */
+
+/* Step 2 */
+input[type="search"]{
+ width:250px;
+ height:30px;
+ padding-left:15px;
+ border-radius:6px;
+ border:none;
+ color:#939393;
+ font-weight:500;
+ background-color: #fffbf8;
+}
+
+/* End Step 2 */
+
+/* Step 3 */
+button[type="submit"]{
+ width:35px;
+ height:30px;
+ background-image:url(img/search-btn.png);
+ background-repeat: no-repeat;
+ background-position: 10px 5px;
+ background-color:transparent;
+ background-size:20px 20px;
+ border:none;
+ cursor:pointer;
+}
+/* End Step 3 */
+
+
+
+/*=======================================*/
+
+.next{
+	background-color: black;
+	width: 5%;
+	color:white;
+	border-radius: 20%;
+	text-align: center;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.next:hover{
+	background-color: white;
+	color: black;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	text-decoration: underline;
+	color: black;
+}

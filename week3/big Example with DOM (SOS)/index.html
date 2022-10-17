@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head> 
+	 <script src="js/functions.js" defer></script>
+	 <link rel="stylesheet" href="css/cssExamples.css">
+</head>
+
+<body>
+<h2>ΗΥ359-Examples</h2>
+<div class="row">
+  <div class="column" style="background-color:#ADD8E6;">
+    <h1>Registration Form</h1>        
+		<form id="signup">
+  <label for="fname"   name="myForm" >First name:</label><br>
+  <input type="text"  onchange="welcome();" id="fname" name="fname" ><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" onchange="surname();" id="lname" name="lname" > <br><br>
+    <label for="pwd">Password:</label><br>
+  <input id="pwd" name="pwd" required="required" pattern=".{8,}" title="Eight or more characters"> <button id="myB" onclick="hideShow()">Hide Password</button>
+  <br><br>
+  Favorite Sports 
+  <input type="checkbox" id="nba" name="sport" value="Basketball">
+  <label for="nba">Basketball</label>
+  <input type="checkbox" id="tenis" name="sport" value="Tennis">
+  <label for="tenis">Tennis</label><br>
+ <input type="submit" class="button" name="Submit">
+</form>
+<br>			</p>
+		
+	
+	
+  </div>
+  <div class="column" id="output" style="background-color:#fffff0;">
+<h2>Output</h2>
+	<div id="message" class="subColumn">Message</div>
+	<div id="image" class="subColumn">Image</div>    
+</div>
+</div>
+
+</body>
+
+</html>

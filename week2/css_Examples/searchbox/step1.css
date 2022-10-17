@@ -1,0 +1,50 @@
+body{
+ background-color:#ede4dc;
+}
+#gradient{
+ width:0;
+ height:50px;
+ margin:0 auto;
+ border-radius:100%;
+ -webkit-box-shadow: 0 50px 200px 150px rgba(255, 255, 255, 0.93);
+ -moz-box-shadow: 0 50px 200px 150px rgba(255, 255, 255, 0.93);
+ box-shadow: 0 50px 200px 150px rgba(255, 255, 255, 0.93);
+}
+
+
+/* Step 1 */
+
+.searchbox{
+ background-color:#fffbf8;
+ padding:13px;
+ width:335px;
+ margin:100px auto;
+ box-sizing:border-box;
+ border-radius:6px;
+}
+
+/* End Step 1 */
+
+/*=======================================*/
+
+.next{
+	background-color: black;
+	width: 5%;
+	color:white;
+	border-radius: 20%;
+	text-align: center;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.next:hover{
+	background-color: white;
+	color: black;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	text-decoration: underline;
+	color: black;
+}

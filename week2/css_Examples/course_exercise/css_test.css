@@ -1,0 +1,45 @@
+ body{
+background-image:url(./background-wallpaper-5.jpg);
+background-position:top center; 
+background-attachment:scroll;
+background-repeat:repeat;
+background-size:100%;
+} 
+
+h1{
+line-height:50px;
+text-align:center;
+text-decoration:center; 
+text-shadow: 4px 4px #EACCEA;
+font-family:Arial;
+font-variant:small-caps;
+}
+
+.date{
+text-align:right;}
+
+.mycontent{
+text-indent:10%;
+text-align:justify;}
+
+
+.mycontent2{
+text-align:justify;
+border:15px solid white;
+
+padding:3% 3% 3% 3%}
+
+#menu1{
+list-style-type:none; 
+height:30%;
+background-color:#EACCEA}
+
+.leftColumn{
+float:left;
+width:20%;
+height:1000px;}
+
+.rightColumn{
+float:left;
+width:68%;
+margin: 2% 2% 2% 10%;}

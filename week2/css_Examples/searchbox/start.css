@@ -1,0 +1,45 @@
+body{
+ background-color:#ede4dc;
+}
+#gradient{
+ width:0;
+ height:50px;
+ margin:0 auto;
+ border-radius:100%;
+ -webkit-box-shadow: 0 50px 200px 150px rgba(255, 255, 255, 0.93);
+ -moz-box-shadow: 0 50px 200px 150px rgba(255, 255, 255, 0.93);
+ box-shadow: 0 50px 200px 150px rgba(255, 255, 255, 0.93);
+}
+
+/*
+box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;
+h-shadow	Required. The position of the horizontal shadow. Negative values are allowed	
+v-shadow	Required. The position of the vertical shadow. Negative values are allowed	
+blur	Optional. The blur distance	
+spread	Optional. The size of shadow. Negative values are allowed	
+color	Optional. The color of the shadow. The default value is black.
+*/
+
+/*=======================================*/
+
+.next{
+	background-color: black;
+	width: 5%;
+	color:white;
+	border-radius: 20%;
+	text-align: center;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.next:hover{
+	background-color: white;
+	color: black;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	text-decoration: underline;
+	color: black;
+}

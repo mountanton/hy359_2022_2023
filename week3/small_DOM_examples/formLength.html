@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate() {
+var form = document.forms.myForm;
+var input = form.myInput.value;
+if (input.length>5) {
+      alert('Do not insert more than 5 characters');
+}
+}
+</script>
+</head>
+<body>
+<form name="myForm" onsubmit="validate()">
+Insert less than 5 characters: <br>
+<input type="text" name="myInput">
+ <input type="submit" value="Send input">
+</form>
+</body>
+</html> 

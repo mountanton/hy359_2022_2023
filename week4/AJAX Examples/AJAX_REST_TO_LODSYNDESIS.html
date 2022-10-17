@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+Type an entity <input type="text" id="uri" value="Aristotle">
+<button type="button" onclick="loadDoc() ">Change Content</button>
+</div>
+
+<div id="msg"></div>
+
+<script>
+function loadDoc(){
+const xhr = new XMLHttpRequest();
+
+xhr.addEventListener("readystatechange", function () {
+	if (this.readyState === this.DONE) {
+	document.getElementById("msg").innerHTML="";
+		const obj = JSON.parse(xhr.responseText);
+        for(id in obj){
+			var text=obj[id].uri;
+			document.getElementById("msg").innerHTML+="<br><a href="+text+">"+text+"</a>";
+		}
+	}
+});
+
+let uri="http://dbpedia.org/resource/"+document.getElementById("uri").value;
+xhr.open("GET", "https://demos.isl.ics.forth.gr/lodsyndesis/rest-api/objectCoreference?uri="+uri);
+
+xhr.setRequestHeader("Accept", "application/json");
+
+xhr.send();
+}
+</script>
+
+</body>
+</html>

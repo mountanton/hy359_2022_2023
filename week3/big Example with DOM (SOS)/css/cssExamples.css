@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 8px;
+  margin-right:10px;
+  margin-left:10px;
+    height:500px;
+}
+
+.subColumn {
+float: left;
+  width: 45%;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 8px;
+  margin-right:10px;
+  margin-left:10px;
+  height:300px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+width:100%;	
+}
+
+
+
+h2{
+	text-align: center;
+}
+
+.button {
+  background-color: #ffffff; 
+    border: 5px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+

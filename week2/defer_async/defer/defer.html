@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<h1>The script defer attribute</h1>
+
+<script src="demo_defer_addition.js" defer></script>
+<script src="demo_defer.js" defer></script>
+
+
+
+<p>The script above requests information from the paragraph below. Normally, this is not possible, because the script is executed before the paragraph exists.</p>
+
+
+Multiply
+<p id="p1">5</p>
+<p id="p2">8</p>
+
+<p id="results"><p/>
+
+
+<p>However, the defer attribute specifies that the script should be executed later. This way the script can request information from the paragraph.</p>
+
+</body>
+</html>

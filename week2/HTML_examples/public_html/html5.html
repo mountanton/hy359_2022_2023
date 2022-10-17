@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+	
+  <!-- Original document example from https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure -->
+  <!-- More tags and media from Sifis Oikonomakis -->
+  
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>My page title</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Here is our main header that is used across all the pages of our website -->
+
+    <header>
+      <h1>Header</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <!-- A Search form is another common non-linear way to navigate through a website. -->
+
+      <form>
+        <input type="search" name="q" placeholder="Search query" />
+        <input type="submit" value="Go!" />
+      </form>
+    </nav>
+
+    <!-- Here is our page's main content -->
+    <main>
+      <!-- It contains an article -->
+      <article>
+		<main>
+			<h2>Article heading</h2>
+
+			<p>
+			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
+			  lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
+			  viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
+			  et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
+			  congue enim, ut porta lorem lacinia consectetur.
+			</p>
+		
+        <h3>Subsection</h3>
+		<details>
+			<summary>Lorem Ipsum 2</summary>
+			<p>
+			  Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum
+			  dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
+			  Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
+			</p>
+		
+        <p>
+          Pelientesque auctor nisi id magna consequat sagittis. Curabitur
+          dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.
+          Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
+        </p>
+		
+		</details>
+        <h3>Another subsection</h3>
+
+        <p>
+          Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+          soclis natoque penatibus et manis dis parturient montes, nascetur
+          ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+          facilisis semper ac in est.
+        </p>
+
+        <p>
+          Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
+          tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
+          ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
+          diam iaculis velit, is fringille sem nunc vet mi.
+        </p>
+		
+		
+      </article>
+		
+	  <article>
+	   <section>
+		<p>
+		
+			<h2> More html5 tags </h2>
+			
+			<label> <b>Current download progress : </b></label>
+			<progress id="file" value="43" max="100"> 43% </progress>
+			<br><br>
+			
+			<label for="disk_c"><u>Disk usage C:</u></label>
+			<meter id="disk_c" value="43" min="0" max="65"> 43GB out of 65GB</meter>
+			<br><br>
+
+			<label for="disk_d"> <mark>Installing :</mark> </label>
+			<meter id="disk_d" value="0.85">85%</meter>
+			<br><br>
+			
+			<time>10:00</time>
+			<br>
+			<time datetime="2012-01-01 20:00">New Year's Day</time>
+			
+			<br><br>
+			
+			<div > You can draw on this canvas using javascript.</div>
+			<canvas id="myCanvas" width="200" height="100" style=" border:5px solid ;">
+			Your browser does not support the HTML canvas tag.</canvas>
+			
+		</p>
+	  </section>
+	  
+	  
+	   <section>
+	   
+		<p>
+		<h2> Media </h2>
+		
+			
+			<audio controls>
+			
+			<source src="media/Wry.mp3" type="audio/mp3">
+			Your browser does not support this file.
+			
+			</audio>
+			
+			<br><br>
+			
+			<video width="320" height="240" controls>
+				<source src="media/Gandalf.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</p>
+	  </section>
+	  
+	  </article>
+	</main>
+      <!-- the aside content can also be nested within the main content -->
+      <aside>
+        <h2>Related</h2>
+
+        <ul>
+          <li><a href="#">Oh I do like to be beside the seaside</a></li>
+          <li><a href="#">Oh I do like to be beside the sea</a></li>
+          <li><a href="#">Although in the North of England</a></li>
+          <li><a href="#">It never stops raining</a></li>
+          <li><a href="#">Oh well…</a></li>
+        </ul>
+      </aside>
+	  
+
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+	
+	
+	
+	
+
+
+    <footer>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+  </body>
+</html>

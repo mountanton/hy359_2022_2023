@@ -1,0 +1,1 @@
+multiply(document.getElementById("p1").innerHTML,document.getElementById("p2").innerHTML);

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="js/forms.js"></script>
+</head>
+<body>
+<form id="myForm" name="myForm"> Sport:
+   Tennis <input id="tennis" type="radio" name="sport" value="tennis" checked/>
+   NBA <input id="nba" type="radio" name="sport" value="nba" />
+   <br> Name:   <input type="text" id="myName" name="name" value="stef" /> <br>
+  Team: <select id="options" name="team"> <br>
+        <option value="dallas" selected="selected">Dallas</option>
+        <option value="bucks">Milwaukee Bucks</option>
+  </select>
+  <br>Agree<input type="checkbox" id="check" name="check"
+         unchecked>
+</form>
+ <br><br> <button onclick="plainJS()" value=""> Use Plain JS with elements</button>
+ <br><br> <button onclick="plainJS2()" value=""> Use Plain JS with array</button>
+ <br><br> <button onclick="plainJS3()" value=""> Use Plain JS with ids</button>
+ <br><br> <button onclick="jQueryAsParameters()" value=""> Use jQueryAsParameters</button>
+ <br><br> <button onclick="jQueryAsArray()" value=""> Use jQueryAsArray To JSON</button>
+ <br> <br><button onclick="withFormData()" value=""> withFormData and extra field</button>
+  <br> <br><button onclick="withFormDataToJSON()" value=""> withFormDataToJSON</button>
+  <br> <br><button onclick="withFormDataToJSON_and_Extra_Fields_and_Remove()" value=""> withFormDataToJSON and extra field and remove</button>
+  <h1>Results</h1>
+  <br> <div id="message"></div>
+</body>
+</html>

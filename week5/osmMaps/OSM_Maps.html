@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>OpenLayers Simplest Example</title>
+</head>
+<body>
+<div id="Map" style="height:600px; width:700px"></div>
+<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+<script>
+   //Orismos Marker
+	map = new OpenLayers.Map("Map");
+    var mapnik         = new OpenLayers.Layer.OSM();
+    map.addLayer(mapnik);
+
+	//Orismos Thesis
+	function setPosition(lat, lon){
+		var fromProjection = new OpenLayers.Projection("EPSG:4326");   // Transform from WGS 1984
+		var toProjection   = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
+		var position       = new OpenLayers.LonLat(lon, lat).transform( fromProjection, toProjection);
+		return position;
+	}
+	
+	//Orismos Handler
+
+	function handler(position, message){
+		var popup = new OpenLayers.Popup.FramedCloud("Popup", 
+			position, null,
+			message, null,
+			true // <-- true if we want a close (X) button, false otherwise
+		);
+		map.addPopup(popup);
+		var div = document.getElementById('divID');
+		div.innerHTML += 'Energopoitihike o Handler<br>';
+	
+	}
+
+//Markers	
+    var markers = new OpenLayers.Layer.Markers( "Markers" );
+    map.addLayer(markers);
+
+//Protos Marker	
+	var position=setPosition(35.3053121,25.0722869);
+	var mar=new OpenLayers.Marker(position);
+	markers.addMarker(mar);	
+	mar.events.register('mousedown', mar, function(evt) { 
+		handler(position,'CSD: sxoli mike');}
+	);
+	
+//deuteros marker
+var position2=setPosition(35.1944081, 24.9992908);
+	var mar2=new OpenLayers.Marker(position2);
+	markers.addMarker(mar2);	
+	mar2.events.register('mousedown', mar2, function(evt) { 
+	handler(position2,'Ano Assites: xwrio mike')});
+		
+//Orismos zoom	
+	const zoom           = 10;
+    map.setCenter(position, zoom);
+</script>
+<div id='divID'>
+</div>
+</body>
+</html>

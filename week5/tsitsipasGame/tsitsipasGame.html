@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="myStyle.css">
+<script src="init.js"></script>
+<script src="game.js"></script>
+
+</head>
+
+<body onload="initBoard()">
+
+  
+  
+<div class="row">
+          
+			<div class="column column1Width" style="background-color:#ADD8E6;">
+			  <h2>Live Game</h2>
+			<div id="currentStatus"><img  src='https://media.istockphoto.com/photos/blue-tennis-court-and-illuminated-indoor-arena-with-fans-upper-front-picture-id1176735816?k=20&m=1176735816&s=612x612&w=0&h=HQAZzGz7mUjP5M5e77Ns8eaUu0JYQvo00GERcl8C3rs=' />
+			</div><div id="matchResult"></div>
+			
+			<p id="modeText">Select Mode: <select id="mode">
+  <option value="Easy">Easy</option>
+  <option value="Medium">Medium</option>
+  <option value="Hard" selected="selected">Hard</option>
+  <option value="Very Hard">Very Hard</option>
+	</select>		</p> 
+			  <button type="button" id="play"  onclick="play()" >Play</button> 
+<button type="button" id="move"   onclick="move()">Start the Game</button> 
+<button type="button" id="playAgain" onclick="playAgain()" >Play Again</button> 
+
+
+             </div>
+			 
+			   <div class="column column2Width " id="output" style="background-color:#fffff0;">
+                <h2>Tsitsipas Game: Win the Grand Slam</h2>
+				<div id="table"></div>
+				
+            </div>
+			 
+			 <div class="column column3Width" style="background-color:#D4F5F2;">
+		     <div id="modeSelection"></div> 
+			 <div id="attempts"></div> 
+			 <div id="bestRound"></div> 
+            <h2>Current Results</h2>
+            <div id="results"></div> 
+            </div>
+			
+			
+        </div>
+  
+</body>
+</html>
+

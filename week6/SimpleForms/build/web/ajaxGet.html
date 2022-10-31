@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Sample Ajax Using GET</title>
+        <script src='js/ajax.js' defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        A Sample Ajax Using GET<br>
+        <form id="myForm" onsubmit='sendAjaxGET();return false;'>
+            <label for='fname'>First name:</label>
+            <input id='fname' type='text' name='firstName' value='John'><br>
+            <label for='lname'>Last name:</label>
+            <input id='lname' type='text' name='lastName' value='Doe'><br>
+            <input type='submit'><br>
+        </form>
+        
+        <!--<form id="loginForm">
+            <label for='fname'>Login:</label>
+              <input id='login' type='text' name='login' value=''>
+        </form> -->
+
+        <div id='ajaxContent'></div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head> 
+        <script src="js/ajax.js" defer></script>
+        <link rel="stylesheet" href="css/cssExamples.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    </head>
+    <body>
+        <h2>HY 359-Examples</h2>
+        <div class="row">
+            <div class="column column1Width" id="choices" style="background-color:#ADD8E6;">
+                <h1>Registration Form</h1>        
+                <form id="myForm" name="myForm" onsubmit='sendAjaxPOST();return false;'>
+                    <label for="firstName">First name:</label><br>
+                    <input type="text"  id="fname" name="firstName" required><br>
+                    <label for="lastName">Last name:</label><br>
+                    <input type="text"  name="lastName" id="lname" required><br>
+                    Favourite Sports <br>
+                    <input type="radio" id="nba" name="sport" value="basketball" checked>
+                    <label for="nba">Basketball</label>
+                    <input type="radio" id="tennis" name="sport" value="tennis">
+                    <label for="tenis">Tennis</label><br>
+                    Team: <select id="team" name="team"> 
+                        <option value="dallas" selected="selected">Dallas</option>
+                        <option value="bucks">Milwaukee Bucks</option>
+                    </select>
+
+                    <br> Country:   <input id="country" name="country" value="" /> <br>
+                    <input type="submit" class="button" value="Register">
+                </form>
+					
+					 
+                <br>	
+
+            </div>
+            <div class="column column2Width" id="output" style="background-color:#fffff0;">
+                <h2>Output</h2>
+                <div id="ajaxContent"></div>
+                  
+            </div>
+			
+        </div>
+
+    </body>
+
+</html>
+

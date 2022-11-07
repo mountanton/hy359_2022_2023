@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forms</title>
+<link rel="stylesheet" type="text/css" href="hy359.css">
+</head>
+<body>
+<h3> Sevlets: Forms </h3>
+<UL>
+<LI>
+<A HREF="buttons.html">buttons.html</A> ok
+<LI>
+<A HREF="code-form-1.html">code-form-1.html</A>
+<LI>
+<A HREF="code-form-2.html">code-form-2.html</A>
+<LI>
+<A HREF="get-form.html">get-form.html</A>
+<LI>
+<A HREF="post-form.html">post-form.html</A>
+<LI>
+<A HREF="show-parameters-post-form.html">show-parameters-post-form.html</A>
+<LI>
+<A HREF="show-paramters-get-form.html">show-parameters-get-form.html</A>
+<LI>
+<A HREF="submit-resume.html">submit-resume.html</A>
+<LI>
+<A HREF="three-params-form.html">three-params-form.html</A>
+</UL>
+
+</body>
+</html>
